@@ -125,9 +125,11 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                                     ],
                                   ),
                                   child: Theme(
-                                    data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+                                    data: Theme.of(context).copyWith(
+                                        dividerColor: Colors.transparent),
                                     child: ExpansionTile(
-                                      childrenPadding: EdgeInsets.symmetric(horizontal: 5),
+                                      childrenPadding:
+                                          EdgeInsets.symmetric(horizontal: 5),
                                       title: const CText(
                                         "When collecting, what documents will I need?",
                                         fontSize: 17,
@@ -135,13 +137,16 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                                         color: Colors.black54,
                                       ),
                                       trailing: Icon(
-                                        _customTileExpanded ? Icons.remove : Icons.add,
+                                        _customTileExpanded
+                                            ? Icons.remove
+                                            : Icons.add,
                                         color: Color(0xff3c88bb),
                                         size: 35,
                                       ),
                                       children: [
                                         Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
                                             const CText(
                                               "You need to bring the following documents:",
@@ -194,7 +199,8 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                                         ),
                                       ],
                                       onExpansionChanged: (bool expanded) {
-                                        setState(() => _customTileExpanded = expanded);
+                                        setState(() =>
+                                            _customTileExpanded = expanded);
                                       },
                                     ),
                                   ),
@@ -246,10 +252,10 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                               text: const TextSpan(
                                   text: 'Have more questions? just drop us an',
                                   style: TextStyle(
-                                    color: Colors.black,
+                                    color: Color(0xff444444),
                                     height: 1.5,
                                     // fontWeight: FontWeight.bold,
-                                    fontSize: 17,
+                                    fontSize: 18,
                                   ),
                                   children: [
                                     TextSpan(
@@ -261,23 +267,24 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                                           fontSize: 17,
                                         )),
                                     TextSpan(
-                                        text: ' or',
-                                        style: TextStyle(
-                                          height: 1.5,
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.w400,
-                                          fontSize: 17,
-                                        ))
+                                      text: ' or',
+                                      style: TextStyle(
+                                        color: Color(0xff444444),
+                                        height: 1.5,
+                                        // fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                      ),
+                                    )
                                   ]),
                             ),
                             RichText(
                               text: const TextSpan(
                                   text: 'give us a call',
                                   style: TextStyle(
-                                    color: Colors.black,
+                                    color: Color(0xff444444),
                                     height: 1.5,
                                     // fontWeight: FontWeight.bold,
-                                    fontSize: 17,
+                                    fontSize: 18,
                                   ),
                                   children: [
                                     TextSpan(
@@ -290,11 +297,41 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                                         )),
                                   ]),
                             ),
-                            const SizedBox(height: 120),
+                            const SizedBox(height: 50),
                           ],
                         ),
                       ),
                     ),
+
+                    reviews(
+                        "Our customers ❤ leasing from us",
+                        "See what our satisfied customers have to say",
+                        "4.9/5",
+                        "See all reviews"),
+                    const SizedBox(height: 50),
+                    Center(
+                      child: Text(
+                        "Delivering Value",
+                        style: TextStyle(
+                            fontSize: 26,
+                            fontWeight: FontWeight.w600,
+                            color: Color(0xff3c88bb)),
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Center(
+                      child: Text(
+                        "Why chose us?",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Color(0xff444444),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 100),
+                    Center(child: Image.asset(Images.pacific)),
+                    const SizedBox(height: 100),
+
                   ],
                 )
 
@@ -391,9 +428,11 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                                     ],
                                   ),
                                   child: Theme(
-                                    data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+                                    data: Theme.of(context).copyWith(
+                                        dividerColor: Colors.transparent),
                                     child: ExpansionTile(
-                                      childrenPadding: EdgeInsets.symmetric(horizontal: 5),
+                                      childrenPadding:
+                                          EdgeInsets.symmetric(horizontal: 5),
                                       title: const CText(
                                         "When collecting, what documents will I need?",
                                         fontSize: 17,
@@ -401,13 +440,16 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                                         color: Colors.black54,
                                       ),
                                       trailing: Icon(
-                                        _customTileExpanded ? Icons.remove : Icons.add,
+                                        _customTileExpanded
+                                            ? Icons.remove
+                                            : Icons.add,
                                         color: Color(0xff3c88bb),
                                         size: 35,
                                       ),
                                       children: [
                                         Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
                                             const CText(
                                               "You need to bring the following documents:",
@@ -460,7 +502,8 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                                         ),
                                       ],
                                       onExpansionChanged: (bool expanded) {
-                                        setState(() => _customTileExpanded = expanded);
+                                        setState(() =>
+                                            _customTileExpanded = expanded);
                                       },
                                     ),
                                   ),
@@ -663,9 +706,11 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                                       ],
                                     ),
                                     child: Theme(
-                                      data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+                                      data: Theme.of(context).copyWith(
+                                          dividerColor: Colors.transparent),
                                       child: ExpansionTile(
-                                        childrenPadding: EdgeInsets.symmetric(horizontal: 5),
+                                        childrenPadding:
+                                            EdgeInsets.symmetric(horizontal: 5),
                                         title: const CText(
                                           "When collecting, what documents will I need?",
                                           fontSize: 17,
@@ -673,13 +718,16 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                                           color: Colors.black54,
                                         ),
                                         trailing: Icon(
-                                          _customTileExpanded ? Icons.remove : Icons.add,
+                                          _customTileExpanded
+                                              ? Icons.remove
+                                              : Icons.add,
                                           color: Color(0xff3c88bb),
                                           size: 35,
                                         ),
                                         children: [
                                           Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
                                               const CText(
                                                 "You need to bring the following documents:",
@@ -732,7 +780,8 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                                           ),
                                         ],
                                         onExpansionChanged: (bool expanded) {
-                                          setState(() => _customTileExpanded = expanded);
+                                          setState(() =>
+                                              _customTileExpanded = expanded);
                                         },
                                       ),
                                     ),
@@ -762,7 +811,8 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                               const SizedBox(height: 20),
 
                               Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
                                 children: [
                                   ///  ------- Frequently Asked questions---------
                                   _askQuestion(
@@ -785,7 +835,8 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                               const SizedBox(height: 40),
                               RichText(
                                 text: const TextSpan(
-                                    text: 'Have more questions? just drop us an',
+                                    text:
+                                        'Have more questions? just drop us an',
                                     style: TextStyle(
                                       color: Colors.black,
                                       height: 1.5,
@@ -915,6 +966,72 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
     );
   }
 
+  reviews(String text1, String text2, String text3, String text4) {
+    return Container(
+      height: 30.h,
+      width: double.infinity,
+      color: Color(0xffe7f4fd),
+      child: Center(
+          child: Column(
+        children: [
+          SizedBox(
+            height: 5.h,
+          ),
+          Text(
+            text1,
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+          ),
+          SizedBox(
+            height: 2.h,
+          ),
+          Text(
+            text2,
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900),
+          ),
+          SizedBox(
+            height: 2.h,
+          ),
+          Text(
+            text3,
+            style: TextStyle(fontSize: 18),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.star,
+                color: Color(0xfff5b60d),
+              ),
+              Icon(
+                Icons.star,
+                color: Color(0xfff5b60d),
+              ),
+              Icon(
+                Icons.star,
+                color: Color(0xfff5b60d),
+              ),
+              Icon(
+                Icons.star,
+                color: Color(0xfff5b60d),
+              ),
+              Icon(
+                Icons.star_border,
+                color: Color(0xfff5b60d),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 4.h,
+          ),
+          Text(
+            text4,
+            style: TextStyle(fontSize: 18, color: Color(0xff3c88bb)),
+          ),
+        ],
+      )),
+    );
+  }
+
   /// --- companyLogo ----
   _valuedAndCustomersRow() {
     return Row(
@@ -952,21 +1069,24 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                 child: Container(
                   width: 1290.w,
                   height: 80,
-                  color: Color(0xff173154),
-                  child: Wrap(
-                    spacing: 20,
-                    runSpacing: 30,
-                    children: [
-                      _companyLogo(Images.aramex),
-                      SizedBox(width: 1.3.w),
-                      _companyLogo(Images.bosch),
-                      SizedBox(width: 1.3.w),
-                      _companyLogo(Images.cw),
-                      SizedBox(width: 1.3.w),
-                      _companyLogo(Images.smrt),
-                      SizedBox(width: 1.3.w),
-                      _companyLogo(Images.sp),
-                    ],
+                  color: const Color(0xff173154),
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 2.5.h, left: 3.w),
+                    child: Wrap(
+                      spacing: 20,
+                      runSpacing: 30,
+                      children: [
+                        _companyLogo(Images.aramex),
+                        SizedBox(width: 1.3.w),
+                        _companyLogo(Images.bosch),
+                        SizedBox(width: 1.3.w),
+                        _companyLogo(Images.cw),
+                        SizedBox(width: 1.3.w),
+                        _companyLogo(Images.smrt),
+                        SizedBox(width: 1.3.w),
+                        _companyLogo(Images.sp),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -990,7 +1110,8 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
             children: [
               RichText(
                 text: const TextSpan(
-                    text: 'Pan Pacific Van & Truck Leasing offer a selection of top quality',
+                    text:
+                        'Pan Pacific Van & Truck Leasing offer a selection of top quality',
                     style: TextStyle(
                       color: Colors.black,
                       height: 1.5,
@@ -1240,14 +1361,15 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
 
   _companyLogo(String image) {
     return Image.asset(
-      image,
+      image,color: Colors.grey  ,
     );
   }
 
   ///   -----------   tablet  -------------
   _requestButton() {
     return Container(
-      decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(10)),
+      decoration: BoxDecoration(
+          color: Colors.blue, borderRadius: BorderRadius.circular(10)),
       child: const Padding(
         padding: EdgeInsets.all(10),
         child: CText(
@@ -1559,7 +1681,8 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                         ),
                       ),
                       Theme(
-                        data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+                        data: Theme.of(context)
+                            .copyWith(dividerColor: Colors.transparent),
                         child: ExpansionTile(
                           title: const CText(
                             "VEHICLES",
@@ -1617,7 +1740,8 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                         color: Colors.black26,
                       ),
                       Theme(
-                        data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+                        data: Theme.of(context)
+                            .copyWith(dividerColor: Colors.transparent),
                         child: ExpansionTile(
                           title: const CText(
                             "PROMOTIONS",
@@ -1719,7 +1843,8 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
                         ),
                       ),
                       Theme(
-                        data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+                        data: Theme.of(context)
+                            .copyWith(dividerColor: Colors.transparent),
                         child: ExpansionTile(
                           title: const CText(
                             "CONTACT",
@@ -1876,7 +2001,8 @@ class _VihiclesScreenState extends State<VihiclesScreen> {
         const SizedBox(height: 30),
         RichText(
           text: const TextSpan(
-              text: 'Pan Pacific Van & Truck Leasing offer a selection of top quality',
+              text:
+                  'Pan Pacific Van & Truck Leasing offer a selection of top quality',
               style: TextStyle(
                 color: Colors.black,
                 height: 1.5,

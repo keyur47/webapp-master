@@ -17,6 +17,9 @@ class Images {
   static const String toyotaT = imageRoot + "toyotaT.jpg";
   static const String hino = imageRoot + "hino.png";
   static const String nissanT = imageRoot + "nissanT.jpg";
+  static const String pacific = imageRoot + "why-choose-pan-pacific-van-leasing.png";
+  static const String left = imageRoot + "blue-figure-left.png";
+  static const String right = imageRoot + "blue-figure-right.png";
 }
 
 class CustomIcons {
